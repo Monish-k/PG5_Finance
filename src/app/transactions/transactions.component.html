@@ -1,0 +1,17 @@
+<p>transactions works!</p>
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <h1>Product Name {{productDetails[0].productName}}</h1>
+            <h1>Product Details {{productDetails[0].productDetails}}</h1>
+            <h1>Product Cost {{productDetails[0].productCost}}</h1>
+            <select name="" id="">
+                <option value="3">3 Months</option>
+                <option value="6">6 Months</option>
+                <option value="9">9 Months</option>
+                <option value="3">12 Months</option>
+            </select>
+            <button (click)="onOrderConfirmed()">Pay Now</button>
+        </div>
+    </div>
+</div>
