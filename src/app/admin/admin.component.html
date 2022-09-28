@@ -1,0 +1,40 @@
+<p>admin works!</p>
+<div class="container">
+    <div class="row">
+
+
+<table class="table" border =2px solid black>
+    <thead>
+      <tr>
+            <th scope="col">customerId</th>
+            <th scope="col">customerName</th>
+            <th scope="col">customerEmail</th>
+            <th scope="col">customerAddress</th>
+            <th scope="col">customerAccno</th>
+            <th scope="col">customerBankname</th>
+            <th scope="col">customerIFSC</th>
+            <th scope="col">customerCardtype</th>
+
+
+      </tr>
+    </thead>
+    <tbody>
+         <tr *ngFor="let customer of customerDetails">
+            <td>{{customer.customerId}}</td>
+            <td>{{customer.customerName}}</td>
+            <td>{{customer.customerEmail}}</td>
+            <td>{{customer.customerAddress}}</td>
+            <td>{{customer.customerAccNo}}</td>
+            <td>{{customer.bankName}}</td>
+            <td>{{customer.ifscCode}}</td>
+            <td>{{customer.cardType}}</td>
+            <td><button (click)="onApproved(customer)" >Approve</button></td>
+            
+            <td><button>Delete</button></td>
+        </tr>  
+
+
+    </tbody>
+  </table>
+</div>
+</div>

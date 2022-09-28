@@ -1,0 +1,29 @@
+<p onload="getAllproductList()">product-list works!</p>
+<div class="container">
+    <div class="row">
+
+
+<table class="table" border =2px solid black>
+    <thead>
+      <tr>
+        <th scope="col">productid</th>
+            <th scope="col">productname</th>
+            <th scope="col">productdetails</th>
+            <th scope="col">productcost</th>
+
+      </tr>
+    </thead>
+    <tbody>
+         <tr *ngFor="let product of productdetails">
+            <td >{{product.productId}}</td>
+            <td>{{product.productName}}</td>
+            <td>{{product.productDetails}}</td>
+            <td>{{product.productCost}}</td>
+            <button routerLink="/transaction" type="button" (click)="onSelect(product)">View</button>
+       
+        </tr>  
+    </tbody>
+  </table>
+  
+</div>
+</div>
