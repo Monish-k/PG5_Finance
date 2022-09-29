@@ -1,0 +1,51 @@
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+
+<link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+
+
+
+
+<body>
+<div class="container p-0">
+    
+    <div class="card px-4">
+        <p class="h8 py-3">Payment Details</p>
+        <div class="row gx-3">
+            <div class="col-12">
+                <div class="d-flex flex-column">
+                    <p class="text mb-1">Product Name</p>
+                    <p class="form-control mb-3"  >{{productDetails.productname}}</p>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="d-flex flex-column">
+                    <p class="text mb-1">Product Details</p>
+                    <p class="form-control mb-3" >{{productDetails.productdetails}}</p>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="d-flex flex-column">
+                    <p class="text mb-1">Product Cost</p>
+                    <p class="form-control mb-3" >{{productDetails.productcost}}</p>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="d-flex flex-column">
+                    <p class="text mb-1 pb-1">EMI Duration</p>
+                        <select class="form-control flex-column pb-1" name="" id="dropdown">
+                            <option   class="form-control mb-3 pb-1 " value=3 selected>3</option>
+                             <option class="form-control mb-3 pb-1" value=6>6</option>
+                             <option class="form-control mb-3 pb-1" value=9>9</option>
+                             <option class="form-control mb-3 pb-1 " value=12>12</option>
+                         </select>
+                </div>
+            </div>
+       
+            
+            
+        </div>
+        <button type="button" class="btn btn-dark" (click)="onOrderConfirmed()">PayNow</button>
+        <button type="button" class="btn btn-danger">Cancel Payment</button>
+    </div>
+</div>
+</body>

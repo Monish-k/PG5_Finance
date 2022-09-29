@@ -1,0 +1,61 @@
+<section class="vh-60 gradient-custom">
+    <div class="container py-5 h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-2 col-md-2 col-lg-10 col-xl-10">
+                <div class="card bg-dark text-white" style="border-radius: 1rem;">
+                    <div class="card-body p-5 text-center">
+
+                        <div class="mb-md-5 mt-md-4 pb-5">
+
+                            <h2 class="fw-bold mb-2 text-uppercase"><em
+                                    style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">WELCOME
+                                    TO LTI FINANCE</em></h2>
+                            <p class="text-white-50 mb-5">Please enter your username and password!</p>
+
+                            <form (ngSubmit)="LoginUser()" [formGroup]="loginForm" >
+
+                                <div class="form-outline form-white mb-4">
+                                    <label class="form-label">USERNAME</label>
+                                    <!-- <small class="form-text text-muted"
+                                        *ngIf="loginForm.controls['username'].touched && loginForm.controls['username'].errors['required']">
+                                        Please enter user name.!
+                                    </small> -->
+                                    <input type="text" id="inputUsername" class="form-control form-control-lg"
+                                        formControlName="username"  />
+                                </div>
+
+                                <div class="form-outline form-white mb-4">
+                                    <!-- <small class="form-text text-muted"
+                                        *ngIf="loginForm.controls['password'].touched && loginForm.controls['password'].errors['required']">
+                                        Please enter password properly.!
+                                    </small> -->
+                                    <label class="form-label">PASSWORD</label>
+                                    <input type="password" id="inputPassword" class="form-control form-control-lg"
+                                        formControlName="password"  />
+                                </div>
+
+                                <button class="btn btn-outline-light btn-lg px-5" type="submit">Login</button>
+
+                            </form>
+
+                            <p class="small mb-5 pb-lg-1"><a class="text-white-50" routerLink="/forgot-password">Forgot password?</a></p>
+
+                        </div>
+
+                        <div>
+                            <p class="mb-5">Don't have an account? <a routerLink="/register"
+                                    class="text-white-50 fw-bold">Register</a>
+                            </p>
+                        </div>
+
+                        <div>
+                            <p class="mb-5">Admin User <a routerLink="/admin-login" class="text-white-50 fw-bold">Login as Admin!</a>
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
