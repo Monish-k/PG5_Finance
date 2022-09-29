@@ -1,0 +1,87 @@
+<!-- <p>recent-transactions works!</p>
+
+<h1>Latest Transactions</h1>
+   
+<table border=1 width=1000 style="background-color:#FFFFE0;">
+    <thead>
+        <tr>
+            
+            <th>OrderDate</th>
+            <th>Productname</th>
+            <th>ProductCost</th>
+            <th>emiduration</th>
+            
+        </tr>
+    </thead>
+    <tbody>     
+            <tr *ngFor="let c of listOfOrder">
+                <td>{{c.orderDate}}</td>
+               <td>{{c.productName}}</td>
+            
+            <td>{{c.paidAmount}}</td>
+            <td>{{c.emiDuration}} Months</td>
+             </tr>
+            </tbody>
+</table>
+ -->
+
+
+
+
+
+
+
+
+
+
+<html>
+<body>
+<div class="body">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="http://localhost:4200/admin">MyAdmin</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+
+        </div>
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Logout</button>
+    </nav>
+    <div class="container">
+
+
+        <div class="row">
+
+
+            <table class="table table-sm table-dark">
+                <thead>
+                    <tr>
+
+                        <th>OrderDate</th>
+                        <th>Productname</th>
+                        <th>ProductCost</th>
+                        <th>emiduration</th>
+
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <tr *ngFor="let c of listOfOrder">
+                        <td>{{c.orderDate}}</td>
+                        <td>{{c.productName}}</td>
+
+                        <td>{{c.paidAmount}}</td>
+                        <td>{{c.emiDuration}} Months</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+</body>
+</html>
