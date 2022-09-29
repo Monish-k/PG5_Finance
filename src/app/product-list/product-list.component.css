@@ -1,0 +1,15 @@
+.card {
+    background-color: rgb(8, 8, 8);
+    width: 444px;
+    font-weight: bold;
+    font-size: medium
+    
+  }
+  
+  body {
+   background-image: url("https://coolbackgrounds.io/images/backgrounds/index/compute-ea4c57a4.png");
+   background-size: cover;
+  } 
+ .container{
+    color: rgb(255, 255, 255);
+  }
