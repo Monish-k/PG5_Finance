@@ -1,0 +1,82 @@
+<section class="vh-60 gradient-custom">
+    <div class="container py-5 h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-2 col-md-2 col-lg-10 col-xl-10">
+                <div class="card bg-dark text-white" style="border-radius: 1rem;">
+                    <div class="card-body p-5 text-center">
+
+                        <div class="mb-md-5 mt-md-4 pb-5">
+
+                            <h2 class="fw-bold mb-2 text-uppercase"><em
+                                    style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">Registration</em>
+                            </h2>
+                            <p class="text-white-50 mb-5">Please enter your details correctly</p>
+
+                            <form (ngSubmit)="RegisterUser()">
+
+                                <div class="form-outline form-white mb-4">
+                                    <label class="form-label">USERNAME</label>
+                                    <input type="text" id="inputUsername" class="form-control form-control-lg" [(ngModel)]="regiUser.customername" [ngModelOptions]="{standalone: true}"/>
+                                </div>
+
+                                <div class="form-outline form-white mb-4">
+                                    <label class="form-label">EMAIL ADDRESS</label>
+                                    <input type="text" id="inputemailaddress" class="form-control form-control-lg" [(ngModel)]="regiUser.customeremail" [ngModelOptions]="{standalone: true}"/>
+                                </div>
+
+                                <div class="form-outline form-white mb-4">
+                                    <label class="form-label">DATE OF BIRTH</label>
+                                    <input type="date" id="inputdob" class="form-control form-control-lg" [(ngModel)]="regiUser.customerdob" [ngModelOptions]="{standalone: true}"/>
+                                </div>
+
+                                <div class="form-outline form-white mb-4">
+                                    <label class="form-label">PASSWORD</label>
+                                    <input type="password" id="inputPassword" class="form-control form-control-lg" [(ngModel)]="regiUser.customerpassword" [ngModelOptions]="{standalone: true}"/>
+                                </div>
+
+                                <div class="form-outline form-white mb-4">
+                                    <label class="form-label">CHOOSE CARD TYPE</label>
+                                    <br>
+                                    <label style="color:gold">GOLD<em style="color:red ;">&nbsp; Rupees of 500 will be charged to activate this card</em></label>
+                                    <input type="radio" id="inputcard1" name="cardType" value="Gold" [(ngModel)]="regiUser.cardtype" [ngModelOptions]="{standalone: true}"/>
+                                    <br>
+                                    <label style="color:chocolate">TITANIUM<em style="color:red ;">&nbsp; Rupees of 2000 will be charged to activate this card</em></label>
+                                    <input type="radio" id="inputcard2" name="cardType" value="Titanium" [(ngModel)]="regiUser.cardtype" [ngModelOptions]="{standalone: true}"/>
+                                </div>
+
+                                <div class="form-outline form-white mb-4">
+                                    <label class="form-label">ADDRESS</label>
+                                    <input type="text" id="inputAddress" class="form-control form-control-lg" [(ngModel)]="regiUser.customeraddress" [ngModelOptions]="{standalone: true}"/>
+                                </div>
+
+                                <div class="form-outline form-white mb-4">
+                                    <label class="form-label">ACCOUNT NUMBER</label>
+                                    <input type="number" id="inputaccno" class="form-control form-control-lg" [(ngModel)]="regiUser.customeraccno" [ngModelOptions]="{standalone: true}"/>
+                                </div>
+
+                                <div class="form-outline form-white mb-4">
+                                    <label class="form-label">BANK NAME</label>
+                                    <input type="text" id="inputbankname" class="form-control form-control-lg" [(ngModel)]="regiUser.bankname" [ngModelOptions]="{standalone: true}"/>
+                                </div>
+
+                                <div class="form-outline form-white mb-4">
+                                    <label class="form-label">IFSC</label>
+                                    <input type="text" id="inputifsccode" class="form-control form-control-lg" [(ngModel)]="regiUser.ifsccode" [ngModelOptions]="{standalone: true}"/>
+                                </div>
+
+                                <button class="btn btn-outline-light btn-lg" type="submit">REGISTER</button>
+
+                            </form>
+                        </div>
+
+                        <div>
+                            <p class="mb-5">Have an account already! <a routerLink="/login" class="text-white-50 fw-bold">Login with existing account</a>
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

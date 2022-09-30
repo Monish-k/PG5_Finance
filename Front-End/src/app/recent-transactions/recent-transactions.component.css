@@ -1,0 +1,22 @@
+.row {
+    align-items: center;
+    font-family: arial;
+    font-size: 20px;
+    margin: 120px;
+    
+  
+    
+  }
+   body, html{
+    background-image: url("https://thumbs.dreamstime.com/b/ecommerce-laptop-computer-shopping-trolley-white-gift-blue-ribbon-dark-background-website-retail-business-concept-easy-218161920.jpg");
+    background-size:cover;
+    background-position: center;
+    position: relative;
+    height:100%;
+    min-height:100%;
+    max-height:100%;
+    }
+
+  
+  
+    tr:hover {background-color: #f1e9e9;}

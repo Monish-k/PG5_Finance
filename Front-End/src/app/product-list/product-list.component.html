@@ -1,0 +1,67 @@
+<body>
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <!------ Include the above in your HEAD tag ---------->
+    
+    
+    <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">Products List</a>
+    
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <ul class="nav navbar-nav">
+            <li class="active"><a routerLink="/dashboard">Dashboard</a></li>
+            <li><a routerLink="/recent-transactions">Recent Transactions</a></li>
+          </ul>
+    
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a routerLink="/login" class="glyphicon glyphicon-log-in"> Logout</a></li>
+        </ul>
+      </div>
+    </nav>
+    
+    
+    <p onload="getAllproductList()"></p>
+    <div class="container">
+      <div class="row">
+    
+        
+    
+        <table class="table" border=0px solid black>
+          <tbody>
+            <tr *ngFor="let product of productdetails; let i=index;"  style="border:0px ;">
+              <td>
+    
+                <div class="d-flex justify-content-center container mt-5">
+    
+                  <div class="card p-3 "><i class="fa fa-apple"></i>
+                    <div class="about-product text-center mt-2"><img src={{image[i]}} width="300">
+                      <div>
+                        <h4>MacPc</h4>
+                      </div>
+                    </div>
+                    <div class="stats mt-2">
+                      <div class="d-flex justify-content-between p-price"><span>Product Name</span><span>{{product.productname}}</span>
+                      </div>
+                      <div class="d-flex justify-content-between p-price"><span>Product
+                          Details</span><span>{{product.productdetails}}</span></div>
+                    </div>
+                    <div class="d-flex justify-content-between total font-weight-bold mt-4"><span>Product
+                        Cost</span><span>{{product.productcost}}</span></div>
+                    <button href="#" type="button" class="btn btn-danger" routerLink="/transaction" type="button" (click)="onSelect(product)">BUY NOW</button>
+    
+    
+                  </div>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+    
+      </div>
+    </div>
+    </body>
+    
+    

@@ -1,0 +1,110 @@
+<!-- <p>admin works!</p>
+<div class="container">
+    <div class="row">
+<table class="table" border =2px solid black>
+    <thead>
+      <tr>
+            <th scope="col">customerId</th>
+            <th scope="col">customerName</th>
+            <th scope="col">customerEmail</th>
+            <th scope="col">customerAddress</th>
+            <th scope="col">customerAccno</th>
+            <th scope="col">customerBankname</th>
+            <th scope="col">customerIFSC</th>
+            <th scope="col">customerCardtype</th>
+      </tr>
+    </thead>
+    <tbody>
+         <tr *ngFor="let customer of customerDetails">
+            <td>{{customer.customerId}}</td>
+            <td>{{customer.customerName}}</td>
+            <td>{{customer.customerEmail}}</td>
+            <td>{{customer.customerAddress}}</td>
+            <td>{{customer.customerAccno}}</td>
+            <td>{{customer.bankName}}</td>
+            <td>{{customer.ifscCode}}</td>
+            <td>{{customer.cardType}}</td>
+            <td *ngIf="!customer.cardDetails.cardStatus"><button (click)="onApproved(customer)" >Approve</button></td>
+        </tr>  
+    </tbody>
+  </table>
+</div>
+</div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="body">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="http://localhost:4200/admin">MyAdmin</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse"  id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+         
+    
+        </ul>
+        
+       
+      </div>
+      <a routerLink="/login" class="glyphicon glyphicon-log-in"> Logout</a>
+    </nav>
+    <div class="container" >
+    
+      
+        <div class="row">
+    
+    
+          <table class="table table-sm table-dark">
+            <thead>
+              <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Name</th>
+                <th scope="col">Email</th>
+                <th scope="col">Address</th>
+                <th scope="col">AccountNo</th>
+                <th scope="col">Bankname</th>
+                <th scope="col">Ifsc code</th>
+                <th scope="col">Cardtype</th>
+               
+                
+              </tr>
+            </thead>
+          
+        <tbody>
+          <tr *ngFor="let customer of customerDetails">
+            <td >{{customer.customerid}}</td>
+            <td>{{customer.customername}}</td>
+            <td>{{customer.customeremail}}</td>
+            <td>{{customer.customeraddress}}</td>
+            <td>{{customer.customeraccno}}</td>
+            <td>{{customer.bankname}}</td>
+            <td>{{customer.ifsccode}}</td>
+            <td class="btn btn-secondary btn-sm active btn-info" role="button" aria-pressed="true"><button (click)="onApproved(customer)" >Approve</button></td>
+          </tr>   
+        </tbody>
+      </table>
+    </div>
+    </div>
+    </div>

@@ -1,0 +1,119 @@
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+
+
+<link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" routerLink="/dashboard">DASHBAORD</a>
+        
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <ul class="nav navbar-nav">
+                <li class="active"><a routerLink="/product-list">ProductList</a></li>
+                <li><a routerLink="/recent-transactions">Recent Transactions</a></li>
+              </ul>
+        
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            
+            <li><a routerLink="/login" class="glyphicon glyphicon-log-in"> Logout</a></li>
+          </ul>
+        </div>
+      </nav>
+    
+
+  
+<div class="container bootstrap snippet">
+    
+  <div class="row">
+    <div class="col-lg-2 col-sm-6">
+      <div class="circle-tile ">
+        <a href="#"><div class="circle-tile-heading dark-blue"><i class="fa fa-users fa-fw fa-3x"></i></div></a>
+        <div class="circle-tile-content dark-blue">
+          <div class="circle-tile-description text-faded"> CardId</div>
+          <div class="circle-tile-number text-faded ">{{cardDetails.cardid}}</div>
+          
+        </div>
+      </div>
+    </div>
+     
+    <div class="col-lg-2 col-sm-6">
+      <div class="circle-tile ">
+        <a href="#"><div class="circle-tile-heading red"><i class="fa fa-users fa-fw fa-3x"></i></div></a>
+        <div class="circle-tile-content red">
+          <div class="circle-tile-description text-faded"> CustomerID </div>
+          <div class="circle-tile-number text-faded ">{{customerDetails.customerid}}</div>
+        </div>
+      </div>
+    </div> 
+     <div class="row">
+    <div class="col-lg-2 col-sm-6">
+      <div class="circle-tile ">
+        <a href="#"><div class="circle-tile-heading dark-blue"><i class="fa fa-users fa-fw fa-3x"></i></div></a>
+        <div class="circle-tile-content dark-blue">
+          <div class="circle-tile-description text-faded">CardBalance</div>
+           <div class="circle-tile-number text-faded ">{{cardDetails.creditbalance}}</div>
+        </div>
+      </div>
+    </div>
+     
+    <div class="col-lg-2 col-sm-6">
+      <div class="circle-tile ">
+        <a href="#"><div class="circle-tile-heading red"><i class="fa fa-users fa-fw fa-3x"></i></div></a>
+        <div class="circle-tile-content red">
+          <div class="circle-tile-description text-faded"> CustomerEmail </div>
+           <div class="circle-tile-number text-faded " style="font-size:2rem ;">{{customerDetails.customeremail}}</div>
+        </div>
+      </div>
+    </div> 
+  </div>
+  </div> 
+  <div class="row">
+    <div class="col-lg-2 col-sm-6">
+      <div class="circle-tile ">
+        <a href="#"><div class="circle-tile-heading dark-blue"><i class="fa fa-users fa-fw fa-3x"></i></div></a>
+        <div class="circle-tile-content dark-blue">
+          <div class="circle-tile-description text-faded">CardStatus</div>
+           <div class="circle-tile-number text-faded ">{{cardDetails.cardstatus}}</div>
+       </div>
+      </div>
+    </div>
+     
+    <div class="col-lg-2 col-sm-6">
+      <div class="circle-tile ">
+        <a href="#"><div class="circle-tile-heading red"><i class="fa fa-users fa-fw fa-3x"></i></div></a>
+        <div class="circle-tile-content red">
+          <div class="circle-tile-description text-faded"> CustomerName</div>
+          <div class="circle-tile-number text-faded ">{{customerDetails.customername}}</div>
+        </div>
+      </div>
+    </div> 
+  </div>
+  <div class="row">
+    <div class="col-lg-2 col-sm-6">
+      <div class="circle-tile ">
+        <a href="#"><div class="circle-tile-heading dark-blue"><i class="fa fa-users fa-fw fa-3x"></i></div></a>
+        <div class="circle-tile-content dark-blue">
+          <div class="circle-tile-description text-faded">CardValidity</div>
+           <div class="circle-tile-number text-faded ">{{cardDetails.cardvalidity | date:"yyyy-mm-dd"}}</div>
+        </div>
+      </div>
+    </div>
+     
+    <div class="col-lg-2 col-sm-6">
+      <div class="circle-tile ">
+        <a href="#"><div class="circle-tile-heading red"><i class="fa fa-users fa-fw fa-3x"></i></div></a>
+        <div class="circle-tile-content red">
+          <div class="circle-tile-description text-faded"> IFSCcode</div>
+           <div class="circle-tile-number text-faded ">{{customerDetails.ifsccode}}</div>
+        </div>
+      </div>
+    </div> 
+  </div>
+  
+  
+</div>  
+</body> 

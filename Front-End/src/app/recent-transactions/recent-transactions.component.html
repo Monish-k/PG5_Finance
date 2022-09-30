@@ -1,0 +1,66 @@
+
+<html>
+    <body>
+    <div class="body">
+    
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="http://localhost:4200/admin">Recent Transactions</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"></button>
+                <span class="navbar-toggler-icon"></span>
+<nav>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                      <ul class="nav navbar-nav">
+                          <li class="active"><a routerLink="/dashboard">DashBoard</a></li>
+                        </ul>
+                  
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                      
+                      <li><span><a routerLink="/product-list"span class="glyphicon glyphicon-log-in"> Product List</a></span></li>
+                    </ul>
+                  </div>
+
+                </nav>           
+    
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    
+    
+            </div>
+            <a routerLink="/login" class="glyphicon glyphicon-log-in"> Logout</a>
+        </nav>
+        <div class="container">
+    
+    
+            <div class="row">
+    
+    
+                <table class="table table-sm table-dark">
+                    <thead>
+                        <tr>
+    
+                            <th>OrderDate</th>
+                            <th>Productname</th>
+                            <th>ProductCost</th>
+                            <th>emiduration</th>
+    
+                        </tr>
+                    </thead>
+    
+                    <tbody>
+    
+                        <tr *ngFor="let c of listOfOrder">
+                            <td>{{c.orderdate|date: "yyyy-mm-dd"}}</td>
+                            <td>{{c.productname}}</td>
+    
+                            <td>{{c.paidamount}}</td>
+                            <td>{{c.emiduration}} Months</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    </body>
+    </html>
