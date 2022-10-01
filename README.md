@@ -7,7 +7,7 @@
 <h3><hr></h3>
 
 Team:<ul>
-  <li> Moish K </li>
+  <li> Monish K </li>
   <li> Pranav Jagtap</li>
   <li> Omkar Sawant </li>
   <li> Sandeep Ananthula </li>
